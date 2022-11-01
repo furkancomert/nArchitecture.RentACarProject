@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import kodlama.io.rentACar.dataAccess.abstracts.BrandRepository;
 import kodlama.io.rentACar.entities.concretes.Brand;
 
-@Repository //bu sınıf bir DataAccess nesnesidir
+@Repository // bu sınıf bir DataAccess nesnesidir
 public class InMemoryBrandRepository implements BrandRepository {
 
 	List<Brand> brands;
@@ -21,7 +21,7 @@ public class InMemoryBrandRepository implements BrandRepository {
 		brands.add(new Brand(4, "Fiat"));
 		brands.add(new Brand(5, "Renault"));
 	}
-
+	
 	@Override
 	public List<Brand> getAll() {
 		// TODO Auto-generated method stub
